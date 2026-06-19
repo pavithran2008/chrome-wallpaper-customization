@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Wallpaper Customizer</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎨 Wallpaper Customizer</h1>
+    
+    <div class="section">
+      <h2>Choose a Wallpaper</h2>
+      <div class="wallpaper-grid">
+        <div class="wallpaper-option" data-color="#FF6B6B" style="background-color: #FF6B6B;">
+          <span>Red</span>
+        </div>
+        <div class="wallpaper-option" data-color="#4ECDC4" style="background-color: #4ECDC4;">
+          <span>Teal</span>
+        </div>
+        <div class="wallpaper-option" data-color="#45B7D1" style="background-color: #45B7D1;">
+          <span>Blue</span>
+        </div>
+        <div class="wallpaper-option" data-color="#96CEB4" style="background-color: #96CEB4;">
+          <span>Green</span>
+        </div>
+        <div class="wallpaper-option" data-color="#FFEAA7" style="background-color: #FFEAA7;">
+          <span>Yellow</span>
+        </div>
+        <div class="wallpaper-option" data-color="#DDA15E" style="background-color: #DDA15E;">
+          <span>Orange</span>
+        </div>
+        <div class="wallpaper-option" data-color="#BC6C25" style="background-color: #BC6C25;">
+          <span>Brown</span>
+        </div>
+        <div class="wallpaper-option" data-color="#2D3436" style="background-color: #2D3436;">
+          <span>Dark</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Upload Custom Image</h2>
+      <input type="file" id="imageUpload" accept="image/*">
+      <button id="uploadBtn">Set Custom Image</button>
+    </div>
+
+    <div class="section">
+      <h2>Current Wallpaper</h2>
+      <div id="currentPreview" class="preview"></div>
+    </div>
+
+    <button id="resetBtn" class="reset-btn">Reset to Default</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
